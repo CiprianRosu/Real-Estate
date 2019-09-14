@@ -1,5 +1,6 @@
 <?php
 if( $_POST ){
+  print_r($_POST);
   // TODO: validate name
   echo("test");
   $sName = $_POST['txtName'];
