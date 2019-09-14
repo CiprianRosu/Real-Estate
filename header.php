@@ -1,21 +1,5 @@
 <?php
-session_start();
-if(isset( $_SESSION['user_id'])){
-$user_id= $_SESSION['user_id'];
-  $sjData = file_get_contents('api/data.json');
-  $jUsers = json_decode( $sjData );
-  if(isset($jUsers->agent->$user_id)){
-    if($jUsers->agent->$user_id->ActivationCode!="Activated"){
-    header('Location: ../activateYourAccount.php');   
-    }  
-  }
-    if(isset($jUsers->user->$user_id)){
-      if($jUsers->user->$user_id->ActivationCode!="Activated"){
-        header('Location: ../activateYourAccount.php');   
-      }
-    }
-
-}
+include_once "Connections.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,10 +24,21 @@ $user_id= $_SESSION['user_id'];
         <a href="Map.php"><li>Map</li></a>
         <?php 
         if(isset($_SESSION['user_id'])){
-          echo("<a href='Profile.php'> <li class='floatRight'>My Profile</li></a>");
+          echo("<li id='userMenuToggler'class='floatRight'>My Profile
+               <ul id='userMenu'>
+                    <a href='Settings.php'><li>Settings</li></a>
+                    <a href='PropertiesSettings.php'><li>Properties</li></a>
+                    <a href='api/Logout.php'><li>Logout</li></a>
+                </ul>
+            </li>");
         }
         else{
-          echo("<a href='SignUp.php'> <li class='floatRight'>Sign Up</li></a>");
+          echo("
+            <a href='SignUp.php'> 
+                <li class='floatRight'>
+                Sign Up
+                </li>
+            </a>");
           echo("<a href='login.php'> <li class='floatRight'>Login</li></a>");
 
         }

@@ -40,7 +40,6 @@ main{
 }
 #content{
 	width: 100%;
-	height: 500px;
 	background-color: #EFEFEF;
 }
 #searchBar{
@@ -63,7 +62,7 @@ form{
 	display: flex;
 	justify-content: center;
 }
-form .SignUp, form .Login{
+form .SignUp, form .Login, form .CreateProperty{
 	margin: 50px;
 	width: 300px;
 	justify-content: center;
@@ -72,7 +71,7 @@ form .SignUp, form .Login{
 }
 
 label{
-margin:5px 0;
+margin:5px 0	;
 }
 
 .radioButton{
@@ -82,4 +81,34 @@ margin:5px 0;
 }
 .radioButton input{
 	margin-right: 10px;
+}
+#userMenu{
+	display: none;
+	background-color:#2F2F2F;
+	position: absolute;
+	padding:10px 0; 
+}
+.userMenuVisible{
+display: flex !important;
+flex-direction: column;
+}
+#listOfProperties{
+	display: flex;
+	justify-content: center;
+}
+#listOfProperties ul li{
+display: flex;
+padding: 20px;
+border:1px solid black;
+width: 500px;
+justify-content: space-between;
+
+}
+#listOfProperties ul li div{
+display: flex;
+flex-direction: column;
+}
+.proprety .texts{
+	display: flex;
+	flex-direction: column;
 }

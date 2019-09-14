@@ -28,8 +28,11 @@ include "header.php"
     </div>
 	
     <button type="submit">SignUp</button>
+
   </div>
 </form>
 <?php
 include "footer.php";
 ?>
+
+

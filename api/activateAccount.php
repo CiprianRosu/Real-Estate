@@ -22,7 +22,7 @@ if(isset($jData->user->$user_id)){
 
 	if( $jData->user->$user_id->ActivationCode == $sKey ){
 		echo 'match found';
-		$jData->user->$user_id->ActivationCode="";
+		$jData->user->$user_id->ActivationCode="Activated";
 		$sjData = json_encode( $jData, JSON_PRETTY_PRINT ); // convert json to text
 		file_put_contents( 'data.json' , $sjData );  // save text to file
 	}else{
