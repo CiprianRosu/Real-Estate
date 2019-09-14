@@ -1,7 +1,7 @@
 <?php
 include 'header.php';
 ?>
-<form action="action_page.php">
+<form method="post" action="api/Login.php">
   
 
   <div class="Login">

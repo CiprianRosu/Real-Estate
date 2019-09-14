@@ -1,24 +1,40 @@
 {
+    "agent": {
+        "5d7cf15b93daf": {
+            "Username": "asd",
+            "Email": "sad",
+            "Password": "asd",
+            "properties": {}
+        },
+        "5d7cf160f25cb": {
+            "Username": "asd",
+            "Email": "sad",
+            "Password": "asd",
+            "properties": {}
+        },
+        "5d7d11b891be9": {
+            "Username": "trixo",
+            "Email": "matus.satara@gmail.com",
+            "Password": "asd",
+            "ActivationCode": "Activated",
+            "properties": {}
+        }
+    },
     "user": {
-        "5d7ceb9bb0b60": {
-            "Username": "Ciprian Rosu",
-            "Email": "a@a.com",
-            "Password": "dsgdss",
-            "AccountType": "customer"
+        "5d7cf16b62ace": {
+            "Username": "asd",
+            "Email": "sad",
+            "Password": "asd"
         },
-        "5d7cec5e2d675": {
-            "Username": "Ciprian Rosu1c",
-            "Email": "a@a.com",
-            "Password": "xxxx",
-            "AccountType": "agent",
-            "properties": {}
+        "5d7cf1a68ee35": {
+            "Username": "asd",
+            "Email": "sad",
+            "Password": "sad"
         },
-        "5d7cec785be38": {
-            "Username": "Ciprian Rosu1c",
-            "Email": "a@a.com",
-            "Password": "xxxx",
-            "AccountType": "agent",
-            "properties": {}
+        "5d7cf1ad05d9c": {
+            "Username": "asd",
+            "Email": "sad",
+            "Password": "dsad"
         }
     }
 }
