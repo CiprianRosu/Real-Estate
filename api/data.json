@@ -1,11 +1,23 @@
 {
-    "agents": {
-        "5d7cdc4d72505": {
-            "name": null,
+    "user": {
+        "5d7ceb9bb0b60": {
+            "Username": "Ciprian Rosu",
+            "Email": "a@a.com",
+            "Password": "dsgdss",
+            "AccountType": "customer"
+        },
+        "5d7cec5e2d675": {
+            "Username": "Ciprian Rosu1c",
+            "Email": "a@a.com",
+            "Password": "xxxx",
+            "AccountType": "agent",
             "properties": {}
         },
-        "5d7cdd6acbf49": {
-            "name": null,
+        "5d7cec785be38": {
+            "Username": "Ciprian Rosu1c",
+            "Email": "a@a.com",
+            "Password": "xxxx",
+            "AccountType": "agent",
             "properties": {}
         }
     }
