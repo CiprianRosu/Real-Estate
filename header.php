@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Real estate</title>
+    <title>Cip's Real estate</title>
 </head>
 <body>
 <header>
@@ -23,4 +23,6 @@
         <li class="floatRight">Login</li>
     </ul>
 </header>
+<main>
+	<div id="content">
 
