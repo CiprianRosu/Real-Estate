@@ -23,15 +23,4 @@
         <li class="floatRight">Login</li>
     </ul>
 </header>
-<main>
-	<div id="content">
-		<div id="searchBar">
-			<input type="text" placeholder="Search properties"/>
-		</div>
-	</div>
-</main>
 
-    <!-- Javascript file link -->
-    <script type="text/javascript" src="script.js"></script>
-</body>
-</html>
