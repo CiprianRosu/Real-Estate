@@ -1,9 +1,9 @@
 <?php
 include "header.php"
 ?>
-<form action="action_page.php">
+<form method="post" action="api/SignUp.php">
 
-  <div class="container">
+  <div class="SignUp">
     <label for="username"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="username" required>
 
@@ -18,9 +18,15 @@ include "header.php"
     <input type="rePassword" placeholder="Repeat password" name="rePassword" required>
 
     <label for="accountType"><b>Choose type of the account</b></label>
-	<input type="radio" name="accountType" value="customer">Customer<br>
-	<input type="radio" name="accountType" value="agent">Agent<br>
-
+    <div class="radioButton">
+    	<input type="radio" name="accountType" value="customer">
+    	<div>Customer</div>
+    </div>
+    <div class="radioButton">
+		<input type="radio" name="accountType" value="agent">
+    	<div>Agent</div>
+    </div>
+	
     <button type="submit">SignUp</button>
   </div>
 </form>
