@@ -23,7 +23,7 @@ $(document).ready(function() {
 		    success: function(result) {
 		        console.log(result);
 		        // Do something with the result
-		        //location.reload();
+		        location.reload();
 		    }
 		})
 	});

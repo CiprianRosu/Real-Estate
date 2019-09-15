@@ -5,14 +5,17 @@ if($userType=="user"){
 	exit();
 }
 ?>
-<form method="post" action="api/Property.php" enctype="multipart/form-data">
+<form method="post" action="api/Property.php" id="createPropertyForm" enctype="multipart/form-data">
 
   <div class="CreateProperty">
     <label for="name"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" required>
 
-    <label for="location"><b>Location</b></label>
-    <input type="text" placeholder="Enter location" name="location" required>
+    <label  for="location"><b>Location</b></label>
+    <input id="propertyLocation" type="text" placeholder="Enter location" name="location" required>
+
+    <label  for="zipcode"><b>Zip code</b></label>
+    <input id="zipcode" type="text" placeholder="Enter zipcode" name="zipcode" required>
 
     <label for="price"><b>Price</b></label>
     <input type="text" placeholder="Enter price" name="price" required>    
@@ -20,7 +23,7 @@ if($userType=="user"){
     <label for="size"><b>Enter size</b></label>
     <input type="text" placeholder="Enter size" name="size" required>
 	<input name="myFile" type="file">
-    <button type="submit">Create property</button>
+    <button id="submitProperty" type="submit">Create property</button>
 
   </div>
 </form>
