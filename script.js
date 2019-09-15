@@ -29,6 +29,7 @@ $(document).ready(function() {
 	});
 
 	$("#searchBarInput").on('change', function(eve){
+		$("#filteredProperties").html("");
 		console.log(ajProperties);
 		let searchedZipCode=$("#searchBarInput").val();
 		let displayProperties=[];
@@ -51,8 +52,17 @@ $(document).ready(function() {
     </div>\
             <div><img style="width: 250px;" src="api/images/{{path}}"></div>\
     </li>';
+    displayProperties.forEach(item=>{
+    sPrint=sBluePrint;
+    sPrint=sPrint.replace("{{Name}}", item.name);	
+    sPrint=sPrint.replace("{{Location}}", item.location);	
+    sPrint=sPrint.replace("{{Size}}", item.size);	
+    sPrint=sPrint.replace("{{Price}}", item.price);	
+    sPrint=sPrint.replace("{{path}}", item.image);	
+    $("#filteredProperties").append(sPrint);
+    console.log(sPrint);
+    });
 
-    $printout=
 	})
 
 })

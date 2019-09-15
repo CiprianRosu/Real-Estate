@@ -12,12 +12,6 @@ include "AllProperties.php";
 
 		<div id="listOfProperties">
     <ul>
-        <li>
-            <div>Name</div>
-            <div>Location</div>
-            <div>Size</div>
-            <div>Price</div>
-        </li>
         <div id="filteredProperties"></div>
     </ul>
 </div>
