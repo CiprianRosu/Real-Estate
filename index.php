@@ -1,12 +1,26 @@
 
 <?php
 include 'header.php';
+include "AllProperties.php";
 ?>
 
 
 		<div id="searchBar">
-			<input type="text" placeholder="Search properties" value="<?php echo($_SESSION['user_id']);?>" />
+			<label for="search">Search</label>
+			<input id="searchBarInput" name="search" type="text" placeholder="Enter zipcode"/>
 		</div>
+
+		<div id="listOfProperties">
+    <ul>
+        <li>
+            <div>Name</div>
+            <div>Location</div>
+            <div>Size</div>
+            <div>Price</div>
+        </li>
+        <div id="filteredProperties"></div>
+    </ul>
+</div>
 
 <?php
 include 'footer.php';

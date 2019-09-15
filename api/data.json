@@ -7,40 +7,13 @@
             "Password": "asd",
             "ActivationCode": "Activated",
             "properties": {
-                "5d7e30f05750e": {
-                    "name": "nice house",
-                    "location": "Vesterbrogade 2b, 1620 Copenhagen",
+                "5d7e3ef0921e3": {
+                    "name": "Beatiful house",
+                    "location": "Hyldtoftevej 9 Herlev",
+                    "zipcode": "2730",
                     "price": "45",
                     "size": "45",
-                    "image": "5d7e30f057259"
-                },
-                "5d7e30f36bb50": {
-                    "name": "nice house",
-                    "location": "Hyldtoftevej 9, 2730 Herlev",
-                    "price": "45",
-                    "size": "45",
-                    "image": "5d7e30f36b8b7"
-                },
-                "5d7e30f69fa9f": {
-                    "name": "nice house",
-                    "location": "Hyldtoftevej 9 herlev",
-                    "price": "45",
-                    "size": "45",
-                    "image": "5d7e30f69f7ea"
-                },
-                "5d7e381dd1bde": {
-                    "name": "test house",
-                    "location": "christiana denmark",
-                    "price": "45",
-                    "size": "45",
-                    "image": "5d7e381dd13ea"
-                },
-                "5d7e3a86281a5": {
-                    "name": "Beautiful house",
-                    "location": "Enghavevej 40, 1674 K\u00f8benhavn",
-                    "price": "45",
-                    "size": "45",
-                    "image": "5d7e3a8627e4f"
+                    "image": "5d7e3ef091f3e"
                 }
             }
         },
@@ -55,7 +28,8 @@
                     "location": "Kildeager 27",
                     "price": "400",
                     "size": "40",
-                    "image": "5d7d55e798a16"
+                    "image": "5d7d55e798a16",
+                    "zipcode":"1800"
                 }
             }
         }

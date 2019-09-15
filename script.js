@@ -28,5 +28,32 @@ $(document).ready(function() {
 		})
 	});
 
+	$("#searchBarInput").on('change', function(eve){
+		console.log(ajProperties);
+		let searchedZipCode=$("#searchBarInput").val();
+		let displayProperties=[];
+		for(let x=0; x<ajProperties.properties.length;x++){
+				console.log(ajProperties.properties[x].zipcode);
+				console.log(searchedZipCode);
+			if(searchedZipCode==ajProperties.properties[x].zipcode){
+				console.log("one");
+				displayProperties.push(ajProperties.properties[x]);
+			}
+		}
+		console.log(displayProperties);
+
+	sBluePrint = '<li class="property">\
+    <div class="texts">\
+            <div>{{Name}}</div>\
+            <div>{{Location}}</div>\
+            <div>{{Size}}m2</div>\
+            <div>{{Price}}€</div>\
+    </div>\
+            <div><img style="width: 250px;" src="api/images/{{path}}"></div>\
+    </li>';
+
+    $printout=
+	})
+
 })
 
