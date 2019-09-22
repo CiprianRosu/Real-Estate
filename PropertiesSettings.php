@@ -32,39 +32,44 @@ if($userType=="user"){
     $jData = json_decode( $sjData );
 $jProperties=$jData->$userType->$user_id->properties;
     $sBluePrint = '
-    <li class="property">
-            <div>{{Name}}</div>
-            <div>{{Location}}</div>
-            <div>{{Size}}</div>
-            <div>{{Price}}</div>
-      <a href="editProperty.php?id={{id}}"><div class="Edit">Edit</div></a>
-    <div data-id="{{id}}" class="DeleteProperty">Delete</div>
-    </li> 
+    <tr class="property">
+            <td>{{Name}}</td>
+            <td>{{Location}}</td>
+            <td>{{Zip}}</td>
+            <td>{{Size}}</td>
+            <td>{{Price}}</td>
+      <td class="">
+      <a href="editProperty.php?id={{id}}">Edit
+      </a>
+      </td>
+    <td data-id="{{id}}" class="DeleteProperty">Delete</td>
+    </tr> 
     ';
     $data="";
     foreach( $jProperties as $skey => $jProperty ){
       $sCopyBluePrint = $sBluePrint;
       
       $sCopyBluePrint = str_replace( 
-        ['{{Name}}', '{{Location}}', '{{Size}}','{{Price}}','{{id}}'],
-        [$jProperty->name, $jProperty->location,$jProperty->size,$jProperty->price, $skey],
+        ['{{Name}}', '{{Location}}', '{{Size}}','{{Price}}','{{id}}','{{Zip}}'],
+        [$jProperty->name, $jProperty->location,$jProperty->size,$jProperty->price, $skey,$jProperty->zipcode],
         $sCopyBluePrint
       );
       $data.=$sCopyBluePrint;
 }
       ?>
 <div id="listOfProperties">
-    <ul>
-        <li>
-            <div>Name</div>
-            <div>Location</div>
-            <div>Size</div>
-            <div>Price</div>
-            <div class="Edit">Edit</div>
-            <div class="Delete">Delete</div>
-        </li>
+    <table>
+        <tr>
+            <td>Name</th>
+            <th>Location</th>
+            <th>Zipcode</th>
+            <th>Size</th>
+            <th>Price</th>
+            <th class="Edit">Edit</th>
+            <th class="Delete">Delete</th>
+        </tr>
 <?php      echo $data;?>
-    </ul>
+    </table>
 </div>
 <?php
 include "footer.php";

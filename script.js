@@ -10,7 +10,7 @@ $(document).ready(function() {
 		    type: 'DELETE',
 		    success: function(result) {
 		        // Do something with the result
-		        location.reload();
+		        location.replace("deleteYourAccount.php")
 		    }
 		})
 	})
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		    success: function(result) {
 		        console.log(result);
 		        // Do something with the result
-		        location.reload();
+		        location.replace("deleteYourProperty.php")
 		    }
 		})
 	});

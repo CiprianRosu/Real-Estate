@@ -30,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
 	unset($_SESSION["user_id"]);
 	$sjData = json_encode( $jData , JSON_PRETTY_PRINT ); // convert JSON to text
 	file_put_contents( 'data.json' , $sjData );
-	include "Logout.php";
+    unset($_SESSION["user_id"]); 
 
-	header('Location: ../Login.php');
+	header('Location: ../deleteYourAccount.php');
 }
 

@@ -40,7 +40,7 @@ main{
 }
 #content{
 	width: 100%;
-	background-color: #EFEFEF;
+	
 }
 #searchBar{
 	height: 250px;
@@ -88,6 +88,7 @@ margin:5px 0	;
 	background-color:#2F2F2F;
 	position: absolute;
 	padding:10px 0; 
+	z-index: 10;
 }
 .userMenuVisible{
 display: flex !important;
@@ -98,11 +99,19 @@ flex-direction: column;
 	justify-content: center;
 }
 #listOfProperties ul li{
-display: flex;
+	display: flex;
+	padding: 20px;
+	border:1px solid black;
+	width: 500px;
+	justify-content: space-between;
+	
+	}
+#listOfProperties th, #listOfProperties td{
+
 padding: 20px;
 border:1px solid black;
-width: 500px;
-justify-content: space-between;
+
+
 
 }
 #listOfProperties ul li div{
@@ -113,7 +122,38 @@ flex-direction: column;
 	display: flex;
 	flex-direction: column;
 }
+.property .oneProperty{
+	display: flex !important;
+	flex-direction: row !important;
+}
+.property .propertyImage{
+	display: flex;
+    justify-content: center;
+}
+
+.property .oneProperty b{
+	display: flex;
+	align-items: center;
+}
+.texts div{
+margin: 5px !important;
+}
 #map{
 	width: 100%;
+	z-index: 1;
 	height: 500px;
+}
+
+.WelcomeMessage{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.DeleteProperty{
+	cursor: pointer;
+	color: blue;
+
 }

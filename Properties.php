@@ -14,12 +14,14 @@ include "header.php";
     $sBluePrint = '
     <li class="property">
     <div class="texts">
-            <div>{{Name}}</div>
-            <div>{{Location}}</div>
-            <div>{{Size}}m2</div>
-            <div>{{Price}}€</div>
+            <div><h2>{{Name}}</h2></div>
+            <br/>
+            <div class="oneProperty"><b>Location:</b><div>{{Location}}</div></div>
+            <div class="oneProperty"><b>Zip code:</b><div>{{Zip}}</div></div>
+            <div class="oneProperty"><b>Size:</b><div>{{Size}}m2</div></div>
+            <div class="oneProperty"><b>Price:</b><div>{{Price}}€</div></div>
     </div>
-            <div><img style="width: 250px;" src="api/images/{{path}}"></div>
+            <div class="propertyImage"><img style="width: 250px;" src="api/images/{{path}}"></div>
     </li> 
     ';
     $data="";
@@ -27,8 +29,8 @@ include "header.php";
       $sCopyBluePrint = $sBluePrint;
       
       $sCopyBluePrint = str_replace( 
-        ['{{Name}}', '{{Location}}', '{{Size}}','{{Price}}','{{path}}','{{id}}'],
-        [$jProperty->name, $jProperty->location,$jProperty->size,$jProperty->price,$jProperty->image, $skey],
+        ['{{Name}}', '{{Location}}', '{{Size}}','{{Price}}','{{path}}','{{id}}','{{Zip}}'],
+        [$jProperty->name, $jProperty->location,$jProperty->size,$jProperty->price,$jProperty->image, $skey,$jProperty->zipcode],
         $sCopyBluePrint
       );
       $data.=$sCopyBluePrint;

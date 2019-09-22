@@ -15,7 +15,7 @@ include "header.php"
     <input type="password" placeholder="Enter Password" name="password" required>    
 
     <label for="rePassword"><b>Repeat password</b></label>
-    <input type="rePassword" placeholder="Repeat password" name="rePassword" required>
+    <input type="Password" placeholder="Repeat password" name="rePassword" required>
 
     <label for="accountType"><b>Choose type of the account</b></label>
     <div class="radioButton">

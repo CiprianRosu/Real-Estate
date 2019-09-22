@@ -45,7 +45,7 @@ function sendEmail($activationKey,$email,$id){
 	    // Content
 	    $mail->isHTML(true);
 	                                      // Set email format to HTML
-	    $sPath = "http://localhost/RealEstate/Real-Estate/api/activateAccount.php?id=$sUserId&key=$sActivationKey";
+	    $sPath = "http://localhost/KEA/api/activateAccount.php?id=$sUserId&key=$sActivationKey";
 	    $mail->Subject = 'Welcome - Verify your account';
 	    $mail->Body    = 'Welcome, 
 	    <a href="'.$sPath.'">

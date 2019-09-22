@@ -28,11 +28,14 @@ function updateProperty($id,$type,$propertyid,$jData){
      $jProperty->image = $sUniqueImageName;
   } 
   else{
-    echo "Not Uploaded" ;
+    
   }
 
   $sjData = json_encode( $jData, JSON_PRETTY_PRINT );
   file_put_contents( 'data.json', $sjData );
+  
+  header('Location: ' . $_SERVER['HTTP_REFERER']);
+  
 }
 include "Connections.php";
 include "../restricted.php";

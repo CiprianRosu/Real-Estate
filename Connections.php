@@ -8,13 +8,13 @@ $userType="none";
   if(isset($jUsers->agent->$user_id)){
     $userType="agent";
     if($jUsers->agent->$user_id->ActivationCode!="Activated"){
-    header('Location: ../activateYourAccount.php');   
+    header('Location: activateYourAccount.php');   
     }  
   }
     if(isset($jUsers->user->$user_id)){
         $userType="user";
       if($jUsers->user->$user_id->ActivationCode!="Activated"){
-        header('Location: ../activateYourAccount.php');   
+        header('Location: activateYourAccount.php');   
       }
     }
 

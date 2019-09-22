@@ -25,6 +25,7 @@ if( $_POST ){ // Check that the user has clicked on login
     	header('Location: ../index.php');
     }
   }
+  header('Location: ../Login.php');
 }
 
 ?>

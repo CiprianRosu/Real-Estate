@@ -1,4 +1,6 @@
-
+<?php
+include_once "Connections.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,39 +48,4 @@
 </header>
 <main>
 	<div id="content">
-
-
-<?php
-$sKey = $_GET['key']; // key from the url
-$user_id = $_GET['id']; // user id from the url
-
-
-$sjData = file_get_contents( 'data.json' ); // open file
-$jData = json_decode( $sjData ); // convert text to object
-
-if(isset($jData->agent->$user_id)){
-	if( $jData->agent->$user_id->ActivationCode == $sKey ){
-		echo "<h1 class='WelcomeMessage'>Welcome ".$jData->agent->$user_id->Username."</h1>";
-		$jData->agent->$user_id->ActivationCode="Activated";	
-		$sjData = json_encode( $jData, JSON_PRETTY_PRINT ); // convert json to text
-		file_put_contents( 'data.json' , $sjData );  // save text to file
-	}else{
-		
-	} 	
-}
-
-
-if(isset($jData->user->$user_id)){
-
-	if( $jData->user->$user_id->ActivationCode == $sKey ){
-		echo "<h1 class='WelcomeMessage'>Welcome ".$jData->user->$user_id->Username."</h1>";
-		$jData->user->$user_id->ActivationCode="Activated";
-		$sjData = json_encode( $jData, JSON_PRETTY_PRINT ); // convert json to text
-		file_put_contents( 'data.json' , $sjData );  // save text to file
-	}else{
-		
-	}
-
-}
-include '../footer.php';
 

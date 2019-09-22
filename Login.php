@@ -12,7 +12,10 @@ include 'header.php';
     <input type="password" placeholder="Enter Password" name="password" required>
 
     <button type="submit">Login</button>
-    <div class="container" style="background-color:#f1f1f1">
+    <?php
+?>
+  
+    <div class="container">
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </div>
